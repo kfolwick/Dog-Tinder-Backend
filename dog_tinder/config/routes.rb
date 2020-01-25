@@ -13,5 +13,5 @@ Rails.application.routes.draw do
 
     delete '/dogs/:id' => 'dogs#destroy'
 
-    root 'dogs#index'
+    root to: 'dogs#new'
 end
